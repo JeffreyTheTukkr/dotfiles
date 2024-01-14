@@ -1,0 +1,6 @@
+# default
+.DS_Store
+
+# editors
+.idea/
+.vscode/
