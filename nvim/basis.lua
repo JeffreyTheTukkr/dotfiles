@@ -1,5 +1,5 @@
 -- set file encoding
-vim.opt.encoding = utf-8
+vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 
 -- improve clipboard
@@ -12,9 +12,10 @@ vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- improve search
-vim.opt.hlsearch = true
--- todo: check if this is the wanted value
+-- display mode
+vim.opt.showmode = true
+
+-- highlight search keywords
 vim.opt.hlsearch = true
 
 -- enable mouse usage
@@ -22,6 +23,9 @@ vim.opt.mouse = "a"
 
 -- set shift width
 vim.opt.shiftwidth = 4
+
+-- set command line height
+vim.opt.cmdheight = 1
 
 -- highlight current line
 vim.opt.cursorline = true
@@ -40,9 +44,3 @@ vim.opt.updatetime = 600
 vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.swapfile = false
-
--- check if it makes a difference
--- vim.opt.cmdheight = 1
-
--- no fucking idea what it does
--- vim.opt.showmode = false
