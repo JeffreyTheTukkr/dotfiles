@@ -1,0 +1,5 @@
+[scrolling]
+history = 50000
+
+[selection]
+save_to_clipboard = true
