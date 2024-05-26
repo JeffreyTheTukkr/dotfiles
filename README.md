@@ -8,6 +8,7 @@ Repository for my personal Linux configuration, otherwise known as dotfiles.
 # basic
 - htop
 - neovim
+- kitty
 - alacritty
 
 # environmental
