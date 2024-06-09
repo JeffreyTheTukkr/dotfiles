@@ -1,6 +1,3 @@
-# init starship
-starship init fish | source
-
 # init fnm
 set PATH "/home/jeff/.local/share/fnm" $PATH
 fnm env | source
@@ -20,3 +17,4 @@ end
 
 # fix unknown locale issue
 set -Ux LC_ALL C.UTF-8
+
