@@ -5,21 +5,28 @@ Repository for my personal Linux configuration, otherwise known as dotfiles.
 **Applications**
 
 ```
-# basic
-- htop
-- neovim
+# general
 - kitty
-- alacritty
 
-# environmental
-- fish
-- starship
-- tmux
+# cli tools
+- htop
+- bat
+- lsd
+- rsync
+- net-tools
+- tldr
+- ripgrep
 
+# terminal
+- kitty
+- fish + fisher
+- tmux + tpm
+ 
 # development
+- vim
 - fnm
 - pnpm
 - git
-- docker
 - podman
 ```
+
