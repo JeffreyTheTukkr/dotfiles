@@ -1,0 +1,29 @@
+" basic
+colorscheme ron
+set nocompatible
+filetype on
+set showcmd
+set history=1000
+
+" visual
+syntax on
+set number
+set cursorline
+set nowrap
+
+" spaces and tabs
+set shiftwidth=4
+set tabstop=4
+set expandtab
+
+" search
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+set showmatch
+
+" autocomplete
+set wildmenu
+set wildmode=list:longest
+

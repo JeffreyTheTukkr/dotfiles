@@ -6,9 +6,7 @@ abbr -a e exit
 # various
 abbr -a vi vim
 abbr -a npp pnpm
-abbr -a ls lsd
-abbr -a l lsd -la
-abbr -a cat bat
+abbr -a l ls -la
 
 # git
 abbr -a gs git status
@@ -22,10 +20,4 @@ abbr -a grh git reset HEAD~1
 
 # podman
 abbr -a p podman
-abbr -a pl podman logs
-abbr -a pp podman ps
-abbr -a ppa podman ps --all
-abbr -a pc podman-compose
-abbr -a pcu podman-compose up
-abbr -a pcp podman-compose up -d
 
