@@ -7,6 +7,8 @@ abbr -a e exit
 abbr -a vi vim
 abbr -a npp pnpm
 abbr -a l ls -la
+abbr -a t tmux
+abbr -a tl tmux-list-sessions
 
 # git
 abbr -a gs git status
