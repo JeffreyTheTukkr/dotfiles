@@ -20,6 +20,11 @@ abbr -a gcm git commit -m
 abbr -a gp git push
 abbr -a grh git reset HEAD~1
 
-# podman
-abbr -a p podman
+# docker
+abbr -a d docker
+abbr -a de docker exec -it
+abbr -a dp docker ps --all
+abbr -a dc docker-compose
+abbr -a dcu docker-compose up
+abbr -a dcd docker-compose up -d
 
