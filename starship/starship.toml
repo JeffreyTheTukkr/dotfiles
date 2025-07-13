@@ -1,0 +1,30 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# global prompt settings
+add_newline = false
+format = """
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$custom\
+$sudo\
+$status\
+$character"""
+
+
+# hides the code language version
+[package]
+disabled = true
+
+# hide git branch symbol on prompt
+[git_branch]
+symbol = ''
+
+# turncate directory name
+[directory]
+truncate_to_repo = true
+truncation_symbol = "~/../"
+
