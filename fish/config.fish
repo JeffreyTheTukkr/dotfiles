@@ -6,6 +6,12 @@ and not set -q TMUX
     exec tmux
 end
 
+# pnpm
+set -gx PNPM_HOME "/Users/jeffrey/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+
 function fuck
     set -l last_cmd (history | head -n1 | string trim)
 
