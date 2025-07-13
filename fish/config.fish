@@ -6,6 +6,9 @@ and not set -q TMUX
     exec tmux
 end
 
+# starship
+starship init fish | source
+
 # pnpm
 set -gx PNPM_HOME "/Users/jeffrey/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
