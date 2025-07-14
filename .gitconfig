@@ -1,7 +1,11 @@
 [user]
-	email = jeff.boesenkool@gmail.com
+	email = 39796883+JeffreyTheTukkr@users.noreply.github.com
 	name = Jeffrey
+	signingkey = /Users/jeffrey/.ssh/id_ed25519.pub
 
 [push]
-    autoSetupRemote = true
-
+	autoSetupRemote = true
+[commit]
+	gpgsign = false
+[gpg]
+	format = ssh
