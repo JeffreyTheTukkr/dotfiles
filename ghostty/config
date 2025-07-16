@@ -1,4 +1,5 @@
-theme = dark:Builtin Dark,light:Builtin Light
+theme = dark:deep,light:Builtin Light
 command = /opt/homebrew/bin/fish
 click-repeat-interval = 500
 auto-update-channel = stable
+
