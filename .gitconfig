@@ -5,7 +5,10 @@
 
 [push]
 	autoSetupRemote = true
+
 [commit]
 	gpgsign = false
+
 [gpg]
 	format = ssh
+
