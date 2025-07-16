@@ -24,10 +24,10 @@ docker-compose
 aerospace
 ```
 
-**Post-configuration**
+**Post Installation**
 
 ```
 fisher update
-# TMUX TPM
+vim +PluginInstall +qall
 ```
 

@@ -1,7 +1,6 @@
 " basic
-colorscheme ron
 set nocompatible
-filetype on
+filetype off
 set showcmd
 set history=1000
 
@@ -10,6 +9,13 @@ syntax on
 set number
 set cursorline
 set nowrap
+
+" color scheme
+colorscheme delek
+let theme = system('defaults read -g AppleInterfaceStyle')
+if theme =~ 'Dark'
+    colorscheme ron
+endif
 
 " spaces and tabs
 set shiftwidth=4
@@ -26,4 +32,18 @@ set showmatch
 " autocomplete
 set wildmenu
 set wildmode=list:longest
+
+" vundle
+set rtp+=~/.config/vim/bundle/Vundle.vim
+call vundle#begin('~/.config/vim/plugins')
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+call vundle#end()
+filetype plugin indent on
+
+" shortcodes
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>g :GFiles<CR>
 
