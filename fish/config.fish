@@ -1,6 +1,7 @@
-# load brew
+# brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# tmux
 if status is-interactive
 and not set -q TMUX
     exec tmux
@@ -15,6 +16,7 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 
+# fuck
 function fuck
     set -l last_cmd (history | head -n1 | string trim)
 
@@ -23,6 +25,7 @@ function fuck
         return 1
     end
 
-    echo "Running with sudo: $last_cmd"
-    eval "sudo $last_cmd"
+    echo "> sudo $last_cmd"
+    sudo $last_cmd
 end
+

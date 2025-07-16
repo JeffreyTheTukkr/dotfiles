@@ -3,7 +3,7 @@ abbr -a c clear
 abbr -a h history
 abbr -a e exit
 abbr -a l ls -la
-abbr -a f fuck
+abbr -a ! fuck
 
 # various
 abbr -a vi vim
@@ -14,6 +14,7 @@ abbr -a tl tmux list-sessions
 # git
 abbr -a gs git status
 abbr -a gd git diff
+abbr -a gl git log
 abbr -a gr git restore
 abbr -a grs git restore --staged
 abbr -a ga git add
