@@ -1,32 +1,33 @@
 # dotfiles
 
-Repository for my personal Linux configuration, otherwise known as dotfiles.
+Repository for my personal configuration, otherwise known as dotfiles.
 
-**Applications**
+**Requirements**
 
 ```
-# general
-- kitty
+curl
+rsync
+net-tools
+vim
+git
+htop
+fish
+tmux
+starship
+php
+composer
+wp-cli
+fnm
+pnpm
+docker
+docker-compose
+aerospace
+```
 
-# cli tools
-- htop
-- bat
-- lsd
-- rsync
-- net-tools
-- tldr
-- ripgrep
+**Post-configuration**
 
-# terminal
-- kitty
-- fish + fisher
-- tmux + tpm
- 
-# development
-- vim
-- fnm
-- pnpm
-- git
-- podman
+```
+fisher update
+# TMUX TPM
 ```
 
