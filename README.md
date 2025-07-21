@@ -11,6 +11,7 @@ net-tools
 vim
 git
 htop
+ghostty
 fish
 tmux
 starship
