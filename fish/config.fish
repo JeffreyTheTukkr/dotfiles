@@ -7,10 +7,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # init tmux
 if status is-interactive
 and not set -q TMUX
-    exec tmux
+    set -x TMUX_CONFIG_DIR ~/.config/tmux
+    exec tmux -f ~/.config/tmux/.tmux.conf
 end
 
 # init fish
+set -x STARSHIP_CONFIG ~/.config/starship/starship.toml
 starship init fish | source
 
 # load fnm
