@@ -32,3 +32,13 @@ fisher update
 vim +PluginInstall +qall
 ```
 
+**MacOS Specific**
+
+```
+# decrease dock animation duration
+defaults write com.apple.dock autohide-time-modifier -float 0.25; killall Dock
+
+# remove capslock delay
+hidutil property --set '{"CapsLockDelayOverride":0}'
+```
+
