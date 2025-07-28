@@ -1,0 +1,5 @@
+vmType: vz
+arch: aarch64
+cpu: 4
+memory: 12
+

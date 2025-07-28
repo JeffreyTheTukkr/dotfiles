@@ -1,6 +1,9 @@
 # hide fish welcome message
 set fish_greeting
 
+# set colima config directory
+set -gx COLIMA_HOME ~/.config/colima
+
 # init homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
