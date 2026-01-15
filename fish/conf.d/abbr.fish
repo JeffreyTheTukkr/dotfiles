@@ -10,6 +10,7 @@ abbr -a vi vim
 abbr -a npp pnpm
 abbr -a t tmux
 abbr -a tl tmux list-sessions
+abbr -a wps wp server
 
 # git
 abbr -a gs git status
