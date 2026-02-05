@@ -40,5 +40,12 @@ defaults write com.apple.dock autohide-time-modifier -float 0.25; killall Dock
 
 # remove capslock delay
 hidutil property --set '{"CapsLockDelayOverride":0}'
+
+# disable sudo password
+sudo visudo
+- CHANGE LINE
+%admin ALL=(ALL) ALL
+- TO 
+%admin ALL=(ALL) NOPASSWD: ALL
 ```
 
