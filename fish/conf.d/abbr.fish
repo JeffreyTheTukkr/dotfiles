@@ -16,6 +16,7 @@ abbr -a wps wp server
 abbr -a gs git status
 abbr -a gd git diff
 abbr -a gl git log
+abbr -a glo git log --oneline --graph --decorate --al
 abbr -a gr git restore
 abbr -a grs git restore --staged
 abbr -a ga git add
