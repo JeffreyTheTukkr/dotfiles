@@ -9,7 +9,7 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = []
+#after-startup-command = ['workspace 10', 'move-workspace-to-monitor Sidecar Display (AirPlay)']
 
 # Start AeroSpace at login
 start-at-login = true
@@ -47,6 +47,32 @@ automatically-unhide-macos-hidden-apps = true
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
     preset = 'qwerty'
+
+# when connected to iPad over AirPlay
+#[workspace-to-monitor-force-assignment]
+#1  = 'Built-in Retina Display'
+#2  = 'Built-in Retina Display'
+#3  = 'Built-in Retina Display'
+#4  = 'Built-in Retina Display'
+#5  = 'Built-in Retina Display'
+#6  = 'Built-in Retina Display'
+#7  = 'Built-in Retina Display'
+#8  = 'Built-in Retina Display'
+#9  = 'Built-in Retina Display'
+#10 = 'Sidecar Display (AirPlay)'
+
+# when connected to external monitor
+[workspace-to-monitor-force-assignment]
+1 = 'main'
+2 = 'main'
+3 = 'main'
+4 = 'main'
+5 = 'main'
+6 = 'main'
+7 = 'main'
+8 = 'main'
+9 = 'main'
+10 = 'built-in'
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
