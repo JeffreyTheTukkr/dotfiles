@@ -8,7 +8,7 @@ Repository for my personal configuration, otherwise known as dotfiles.
 curl
 rsync
 net-tools
-vim
+vim (see documentation regarding neovim underneath)
 git
 htop
 ghostty
@@ -31,6 +31,13 @@ aerospace
 fisher update
 vim +PluginInstall +qall
 ```
+
+**NeoVIM**
+
+Due to clipboard issues the current `vimrc` file doesn't automatically put the selected text
+into the clipboard history. Therefore, a symlink has been created and neovim is the default
+text editor. However, due to backwards compatability and for the option to easily migrate
+back to `vim`, this isn't included in the dotfiles.
 
 **MacOS Specific**
 

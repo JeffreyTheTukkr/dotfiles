@@ -4,6 +4,11 @@ filetype off
 set showcmd
 set history=1000
 
+" mouse and clipboard support
+set mouse=a
+set clipboard=unnamed
+vnoremap <LeftRelease> y
+
 " visual
 syntax on
 set number
