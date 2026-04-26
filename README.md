@@ -11,6 +11,7 @@ net-tools
 vim (see documentation regarding neovim underneath)
 bat
 git
+delta
 htop
 ghostty
 fish
