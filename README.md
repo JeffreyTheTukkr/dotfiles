@@ -10,6 +10,7 @@ rsync
 net-tools
 vim (see documentation regarding neovim underneath)
 bat
+fzf
 git
 delta
 htop

@@ -9,6 +9,10 @@ set mouse=a
 set clipboard=unnamed
 vnoremap <LeftRelease> y
 
+" open fzf when no file path has been passed on
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | execute 'Files' | endif
+
 " visual
 syntax on
 set number
