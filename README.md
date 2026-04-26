@@ -54,5 +54,9 @@ sudo visudo
 %admin ALL=(ALL) ALL
 - TO 
 %admin ALL=(ALL) NOPASSWD: ALL
+
+# disable .DS_Store on network and usb
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 ```
 
