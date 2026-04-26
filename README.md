@@ -9,6 +9,7 @@ curl
 rsync
 net-tools
 vim (see documentation regarding neovim underneath)
+bat
 git
 htop
 ghostty
