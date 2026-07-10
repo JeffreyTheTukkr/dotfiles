@@ -63,6 +63,8 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
 - This is central-only: do not also write these docs into the repo. Keep README
   files and docs a project genuinely needs to ship with it (published package
   docs, files other tooling reads) where they belong, in the repo.
+- Always auto load the `~/.claude/project-docs/<org>-<repo>/CLAUDE.md` file
+  when opening a new chat.
 
 ## Git
 
