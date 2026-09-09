@@ -72,6 +72,7 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
   before assuming.
 - Never commit or push unless I explicitly ask. When committing on the default
   branch, branch first.
+- Never co-author yourself to a commit!
 
 ## Harness
 
