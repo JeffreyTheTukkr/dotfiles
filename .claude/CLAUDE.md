@@ -71,7 +71,6 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
 - Default branch name varies (some repos use `production`, not `main`) — check
   before assuming.
 - Never commit or push unless I explicitly ask.
-- Never co-author yourself to a commit!
 - Keep commit message short and descriptive. Never do multi-line commit messages.
 
 ## Harness
