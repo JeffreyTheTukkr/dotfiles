@@ -51,9 +51,7 @@
       "mcp__figma__get_metadata",
       "mcp__figma__get_variable_defs",
       "mcp__figma__get_code_connect_map",
-      "mcp__figma__whoami",
-      "mcp__plugin_context7_context7__resolve-library-id",
-      "mcp__plugin_context7_context7__query-docs"
+      "mcp__figma__whoami"
     ],
     "additionalDirectories": [
       "/tmp"
@@ -66,7 +64,6 @@
   "enabledPlugins": {
     "superpowers@claude-plugins-official": true,
     "code-review@claude-plugins-official": true,
-    "context7@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true,
     "playwright@claude-plugins-official": true,

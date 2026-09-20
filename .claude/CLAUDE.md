@@ -44,8 +44,8 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
 - Package managers: **pnpm** for JS (not npm/yarn; no bun), **Composer** for PHP.
   Node is managed by **fnm** with use-on-cd — respect the repo's node version.
   Respect the repo's PHP constraint too (repos target 8.0–8.5).
-- Installed: PHP 8.5, wp-cli, Docker (OrbStack/colima), gh, ripgrep (`rg`),
-  delta, jq, ansible, gettext (`msgfmt`). `fd` is NOT installed.
+- Installed: PHP 8.5, wp-cli, Docker (colima), gh, ripgrep (`rg`),
+  delta, jq, ansible, gettext (`msgfmt`), fd.
 - JS bundler varies per repo (Vite, esbuild, Bud, Webpack/Encore, Turbopack) —
   use the repo's own package.json scripts (`dev`/`build`/`watch`/`check`); don't
   assume a tool or install one globally.
@@ -70,9 +70,9 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
 
 - Default branch name varies (some repos use `production`, not `main`) — check
   before assuming.
-- Never commit or push unless I explicitly ask. When committing on the default
-  branch, branch first.
+- Never commit or push unless I explicitly ask.
 - Never co-author yourself to a commit!
+- Keep commit message short and descriptive. Never do multi-line commit messages.
 
 ## Harness
 
@@ -81,7 +81,3 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
 - After finishing an implementation (feature or bugfix), run a code review of
   the changes before claiming done — use the `/code-review` skill (or superpowers
   `requesting-code-review`) and address what it surfaces.
-- Use context7 for library/framework docs rather than answering from memory.
-  If context7 is unavailable (rate-limited, timing out, or otherwise failing),
-  fall back to your own knowledge rather than blocking; note that the answer
-  wasn't docs-verified.
