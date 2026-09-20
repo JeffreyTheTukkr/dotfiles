@@ -78,5 +78,5 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
 - superpowers workflow is authoritative: brainstorm before building,
   systematic-debugging for bugs, verify before claiming done.
 - After finishing an implementation (feature or bugfix), run a code review of
-  the changes before claiming done — use the `/code-review` skill (or superpowers
-  `requesting-code-review`) and address what it surfaces.
+  the changes before claiming done; use the `/code-review` skill and address what
+  it surfaces.

@@ -55,7 +55,19 @@
       "mcp__figma__get_metadata",
       "mcp__figma__get_variable_defs",
       "mcp__figma__get_code_connect_map",
-      "mcp__figma__whoami"
+      "mcp__figma__whoami",
+      "Bash(./vendor/bin/pint:*)",
+      "Bash(./vendor/bin/phpstan:*)",
+      "Bash(./vendor/bin/phpunit:*)",
+      "Bash(composer analyze:*)",
+      "Bash(composer dump-autoload:*)",
+      "Bash(cargo test:*)",
+      "Bash(cargo clippy:*)",
+      "Bash(cargo build:*)",
+      "Bash(wp:*)",
+      "Bash(sed -n:*)",
+      "Bash(ssh -o BatchMode=yes:*)",
+      "Bash(docker-compose:*)"
     ],
     "defaultMode": "auto",
     "additionalDirectories": [
@@ -101,39 +113,11 @@
   },
   "feedbackDrafts": "off",
   "effortLevel": "high",
+  "autoCompactWindow": 500000,
   "promptSuggestionEnabled": false,
   "autoUpdatesChannel": "stable",
   "tui": "fullscreen",
   "remoteControlAtStartup": true,
   "inputNeededNotifEnabled": true,
-  "agentPushNotifEnabled": true,
-  "autoMode": {
-    "environment": [
-      "### Org-wide",
-      "**Organization**: None configured",
-      "**Cloud provider(s)**: None configured",
-      "**Repository visibility**: assume private unless the remote host and repo name indicate otherwise, or a visibility check in the transcript shows public",
-      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
-      "**Secrets management**: None configured",
-      "**Default / protected branches**: unknown — this checkout has no remotes and no default branch set (origin/HEAD unset); default branch name varies per repo (some use `production`, not `main`) per user's global CLAUDE.md, so verify before assuming",
-      "**CI/CD deploy targets**: None configured",
-      "**Network posture**: None configured",
-      "**Host containment**: None configured — assume Claude Code runs on an ordinary developer machine with open internet",
-      "**Source control**: The trusted repo and its remote(s) only (no additional orgs configured) — as scoped by the Trusted repo and Repository visibility entries above",
-      "**Trusted internal domains**: None configured",
-      "**Trusted cloud buckets**: None configured",
-      "**Key internal services**: None configured",
-      "**Internal package registry**: None configured",
-      "**Sensitive data locations & audiences**: any file or store holding personal data, confidential business data, credentials, regulated data, or similarly sensitive material; preserve exact handles when known and share only with audiences cleared at the [named+specifics] bar",
-      "**Data retention / declassification**: None configured",
-      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment (hyphen/underscore/dot-delimited — e.g. matches `prod-db`, not `producer`)",
-      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
-      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
-      "### User-specific",
-      "**Primary use of Claude Code**: software development",
-      "**Trusted repo**: this directory (/Users/jeffrey) has no git remotes and 0 tracked files — no trusted repo could be identified for this session; treat any git operations here with caution until a repo/remote is established",
-      "**Org-specific CLIs**: None configured"
-    ]
-  },
-  "autoCompactWindow": 500000
+  "agentPushNotifEnabled": true
 }
