@@ -134,5 +134,6 @@
       "**Trusted repo**: this directory (/Users/jeffrey) has no git remotes and 0 tracked files — no trusted repo could be identified for this session; treat any git operations here with caution until a repo/remote is established",
       "**Org-specific CLIs**: None configured"
     ]
-  }
+  },
+  "autoCompactWindow": 500000
 }
