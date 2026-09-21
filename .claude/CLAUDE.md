@@ -80,3 +80,6 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
 - After finishing an implementation (feature or bugfix), run a code review of
   the changes before claiming done; use the `/code-review` skill and address what
   it surfaces.
+- After implementing anything built from a Figma design, run `/design-review`
+  before claiming done and address what it surfaces. Measure the rendered page
+  against the Figma source; a screenshot hides geometry errors.
