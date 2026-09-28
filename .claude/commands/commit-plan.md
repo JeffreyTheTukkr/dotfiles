@@ -38,13 +38,19 @@ progress (`git status` says so), or HEAD is detached.
 ## Message style comes from the log, not from you
 
 The 20 subjects you just read are the spec. If that repo uses
-`feat(scope): ...`, follow it. If it uses plain imperative sentences, follow
+`type(scope): ...`, follow it. If it uses plain imperative sentences, follow
 that. If the log is mixed, follow the most recent 5. Do not impose conventional
 commits on a repo that has never used them.
+
+One exception overrides the log: **never abbreviate the type prefix.** Write
+`feature:` and `bugfix:`, never `feat:`. Existing `feat:` subjects in the log
+are not a licence to write more of them; use the spelled-out word.
 
 Constraints that always apply:
 
 - One line only. Never a body, never a multi-line message.
+- Type prefixes are spelled out in full: `feature:`, `bugfix:`, `refactor:`,
+  `style:`, `chore:`. No `feat:`, no other clipped forms.
 - Short and descriptive; say what changed, not how clever it was.
 - No em-dashes or en-dashes.
 - No backticks and no `$` in the message; both shells expand them inside the
@@ -92,7 +98,7 @@ commands you ran.
 ```
 3 commits, 11 files, on branch feature/checkout
 
-1. fix(checkout): reject expired vouchers before totals run
+1. bugfix(checkout): reject expired vouchers before totals run
    src/Checkout/Voucher.php, tests/Unit/VoucherTest.php
    behaviour change, kept apart from the rename below
 
@@ -103,7 +109,7 @@ commands you ran.
 3. chore(deps): bump vite to 7.1.4
    package.json, pnpm-lock.yaml
 
-git add -- src/Checkout/Voucher.php tests/Unit/VoucherTest.php && git commit -m "fix(checkout): reject expired vouchers before totals run"
+git add -- src/Checkout/Voucher.php tests/Unit/VoucherTest.php && git commit -m "bugfix(checkout): reject expired vouchers before totals run"
 git add -- src/Checkout/VoucherCollection.php src/Checkout/Cart.php && git commit -m "refactor: rename VoucherBag to VoucherCollection"
 git add -- package.json pnpm-lock.yaml && git commit -m "chore(deps): bump vite to 7.1.4"
 
