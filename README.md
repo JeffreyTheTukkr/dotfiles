@@ -31,8 +31,27 @@ aerospace
 **Post Installation**
 
 ```
+ln -sfn ~/code/personal/dotfiles/.gitconfig ~/.gitconfig
+ln -sfn ~/code/personal/dotfiles/.editorconfig ~/.editorconfig
+ln -sfn ~/code/personal/dotfiles/.claude/CLAUDE.md ~/.claude/CLAUDE.md
+ln -sfn ~/code/personal/dotfiles/.claude/settings.json ~/.claude/settings.json
+ln -sfn ~/code/personal/dotfiles/.claude/commands ~/.claude/commands
+ln -sfn ~/code/personal/dotfiles/fish/config.fish ~/.config/fish/config.fish
+ln -sfn ~/code/personal/dotfiles/fish/conf.d/abbr.fish ~/.config/fish/conf.d/abbr.fish
+ln -sfn ~/code/personal/dotfiles/fish/fish_plugins ~/.config/fish/fish_plugins
+ln -sfn ~/code/personal/dotfiles/ghostty/config ~/.config/ghostty/config
+ln -sfn ~/code/personal/dotfiles/herdr/config.toml ~/.config/herdr/config.toml
+ln -sfn ~/code/personal/dotfiles/starship/starship.toml ~/.config/starship/starship.toml
+ln -sfn ~/code/personal/dotfiles/aerospace/aerospace.toml ~/.config/aerospace/aerospace.toml
+ln -sfn ~/code/personal/dotfiles/bat/config ~/.config/bat/config
+ln -sfn ~/code/personal/dotfiles/colima/default.yaml ~/.config/colima/default.yaml
+ln -sfn ~/code/personal/dotfiles/htop/htoprc ~/.config/htop/htoprc
+ln -sfn ~/code/personal/dotfiles/vim/vimrc ~/.config/vim/vimrc
+ln -sfn ~/.config/vim/vimrc ~/.config/nvim/init.vim
+
 fisher update
-vim +PluginInstall +qall
+curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall +qall
 ```
 
 **NeoVIM**

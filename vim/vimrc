@@ -1,6 +1,5 @@
 " basic
 set nocompatible
-filetype off
 set showcmd
 set history=1000
 
@@ -42,15 +41,13 @@ set showmatch
 set wildmenu
 set wildmode=list:longest
 
-" vundle
-set rtp+=~/.config/vim/bundle/Vundle.vim
-call vundle#begin('~/.config/vim/plugins')
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-call vundle#end()
-filetype plugin indent on
+" plugins
+set rtp+=~/.config/vim
+call plug#begin('~/.config/vim/plugins')
+Plug 'editorconfig/editorconfig-vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+call plug#end()
 
 " shortcodes
 nnoremap <leader>f :Files<CR>
