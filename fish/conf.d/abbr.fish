@@ -8,8 +8,6 @@ abbr -a ! fuck
 # various
 abbr -a vi nvim
 abbr -a npp pnpm
-abbr -a t tmux
-abbr -a tl tmux list-sessions
 abbr -a wps wp server
 
 # git

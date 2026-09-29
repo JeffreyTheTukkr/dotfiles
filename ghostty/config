@@ -1,5 +1,5 @@
 theme = dark:deep,light:Builtin Light
-command = /opt/homebrew/bin/fish
+command = /Users/jeffrey/.local/bin/herdr
 click-repeat-interval = 500
 auto-update-channel = stable
 keybind = cmd+enter=unbind

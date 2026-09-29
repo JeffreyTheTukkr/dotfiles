@@ -37,7 +37,8 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
 
 ## Shell & tooling
 
-- My interactive shell is **fish** (not bash); it auto-launches tmux.
+- My interactive shell is **fish** (not bash); Ghostty launches herdr, which
+  runs fish.
   When giving commands for me to run by hand, use fish syntax: `set -x VAR val`
   (not `export`), `set PATH ...`, `for x in ...; ...; end`. The Bash tool itself
   runs under bash, so scripts you execute can use bash syntax.

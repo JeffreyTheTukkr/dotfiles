@@ -16,7 +16,7 @@ delta
 htop
 ghostty
 fish
-tmux
+herdr
 starship
 php
 composer
