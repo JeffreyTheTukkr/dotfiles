@@ -32,6 +32,7 @@ aerospace
 
 ```
 ln -sfn ~/code/personal/dotfiles/.gitconfig ~/.gitconfig
+ln -sfn ~/code/personal/dotfiles/git/ignore ~/.config/git/ignore
 ln -sfn ~/code/personal/dotfiles/.editorconfig ~/.editorconfig
 ln -sfn ~/code/personal/dotfiles/.claude/CLAUDE.md ~/.claude/CLAUDE.md
 ln -sfn ~/code/personal/dotfiles/.claude/settings.json ~/.claude/settings.json

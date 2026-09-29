@@ -1,0 +1,9 @@
+**/.claude/settings.local.json
+mise.toml
+.mise.toml
+mise.*.toml
+.mise.*.toml
+mise.lock
+.mise/
+.config/mise/
+.config/mise.toml
