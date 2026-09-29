@@ -3,7 +3,6 @@ abbr -a c clear
 abbr -a h history
 abbr -a e exit
 abbr -a l ls -la
-abbr -a ! fuck
 
 # various
 abbr -a vi nvim
