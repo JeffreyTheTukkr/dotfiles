@@ -50,7 +50,7 @@ Constraints that always apply:
 
 - One line only. Never a body, never a multi-line message.
 - Type prefixes are spelled out in full: `feature:`, `bugfix:`, `refactor:`,
-  `style:`, `chore:`. No `feat:`, no other clipped forms.
+  `chore:`. No `style:`, no `feat:`, no other clipped forms.
 - Short and descriptive; say what changed, not how clever it was.
 - No em-dashes or en-dashes.
 - No backticks and no `$` in the message; both shells expand them inside the
