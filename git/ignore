@@ -7,3 +7,4 @@ mise.lock
 .mise/
 .config/mise/
 .config/mise.toml
+.playwright-mcp/
