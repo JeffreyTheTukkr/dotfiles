@@ -11,9 +11,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 set -x STARSHIP_CONFIG ~/.config/starship/starship.toml
 starship init fish | source
 
-# load fnm
-fnm env --use-on-cd --shell fish | source
-
 # load pnpm
 set -gx PNPM_HOME "/Users/jeffrey/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH

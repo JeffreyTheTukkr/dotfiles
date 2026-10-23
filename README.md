@@ -17,12 +17,9 @@ htop
 ghostty
 fish
 herdr
+tmux
 starship
-php
-composer
-wp-cli
-fnm
-pnpm
+mise (php, composer, wp-cli, node, pnpm)
 docker
 docker-compose
 aerospace
@@ -47,10 +44,12 @@ ln -sfn ~/code/personal/dotfiles/aerospace/aerospace.toml ~/.config/aerospace/ae
 ln -sfn ~/code/personal/dotfiles/bat/config ~/.config/bat/config
 ln -sfn ~/code/personal/dotfiles/colima/default.yaml ~/.config/colima/default.yaml
 ln -sfn ~/code/personal/dotfiles/htop/htoprc ~/.config/htop/htoprc
+ln -sfn ~/code/personal/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -sfn ~/code/personal/dotfiles/vim/vimrc ~/.config/vim/vimrc
 ln -sfn ~/.config/vim/vimrc ~/.config/nvim/init.vim
 
-fisher update
+curl https://mise.run | sh
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update
 curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
 ```
