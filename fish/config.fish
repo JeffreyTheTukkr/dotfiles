@@ -11,12 +11,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 set -x STARSHIP_CONFIG ~/.config/starship/starship.toml
 starship init fish | source
 
-# load pnpm
-set -gx PNPM_HOME "/Users/jeffrey/Library/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-
 # fix psql issue
 fish_add_path /opt/homebrew/opt/postgresql/bin
 
