@@ -56,6 +56,11 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
   suggest committing it. Theme-only WordPress repos keep WordPress core in
   `.ddev/wordpress` with the repo mounted as its theme. Projects and colima are
   started by hand; never leave them running after testing (`ddev poweroff`).
+  Anything that needs the database or the project's PHP version runs in the
+  container: `ddev composer`, `ddev artisan`, `ddev wp`, `ddev exec bin/console`.
+  JS installs and builds run on the host with pnpm. Ignore repo instructions
+  that start host servers (`composer run dev`, `artisan serve`, `wp server`,
+  the compose files); repo-specific DDEV details are in the project docs.
 - Installed: Docker (colima), ddev, mkcert, gh, ripgrep (`rg`), fd, jq, delta,
   bat, fzf, ansible, gettext (`msgfmt`).
 - JS bundler varies per repo (Vite, esbuild, Bud, Webpack/Encore, Turbopack) —
@@ -75,14 +80,17 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
 - This is central-only: do not also write these docs into the repo. Keep README
   files and docs a project genuinely needs to ship with it (published package
   docs, files other tooling reads) where they belong, in the repo.
-- Always auto load the `~/.claude/project-docs/<org>-<repo>/CLAUDE.md` file
-  when opening a new chat.
+- A SessionStart hook (`dotfiles/.claude/hooks/project-docs.sh`) loads
+  `~/.claude/project-docs/<org>-<repo>/CLAUDE.md` for the repo a session starts
+  in. When working in another repo mid-session, read its file yourself. Keep
+  these files current when the local setup of a repo changes.
 
 ## Git
 
 - Default branch name varies (some repos use `production`, not `main`) — check
   before assuming.
-- Never commit or push unless I explicitly ask.
+- Never commit or push unless I explicitly ask. `git commit` and `git push`
+  are `ask` rules in settings, so even then I confirm each one.
 - Keep commit message short and descriptive. Never do multi-line commit messages.
 
 ## Harness
