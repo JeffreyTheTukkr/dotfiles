@@ -7,7 +7,7 @@
 	autoSetupRemote = true
 
 [commit]
-	gpgsign = false
+	gpgsign = true
 
 [gpg]
 	format = ssh
@@ -27,3 +27,7 @@
 [merge]
     conflictStyle = zdiff3
 
+[tag]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = /Users/jeffrey/.config/git/allowed_signers
