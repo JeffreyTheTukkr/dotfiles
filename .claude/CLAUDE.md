@@ -51,8 +51,11 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
   Rust via Homebrew `rustup` (keg-only, on PATH from config.fish).
   Respect the repo's PHP constraint (repos target 7.1–8.5; the PHP 7.x and
   Node <18 zbseo repos run in containers, not on the host).
-- Local sites run in **DDEV** (one project per repo, own database each);
-  `.ddev/` is globally gitignored, so never commit it or suggest committing it.
+- Local sites run in **DDEV** (one project per repo, own database each) on
+  `https://<name>.test`; `.ddev/` is globally gitignored, so never commit it or
+  suggest committing it. Theme-only WordPress repos keep WordPress core in
+  `.ddev/wordpress` with the repo mounted as its theme. Projects and colima are
+  started by hand; never leave them running after testing (`ddev poweroff`).
 - Installed: Docker (colima), ddev, mkcert, gh, ripgrep (`rg`), fd, jq, delta,
   bat, fzf, ansible, gettext (`msgfmt`).
 - JS bundler varies per repo (Vite, esbuild, Bud, Webpack/Encore, Turbopack) —
