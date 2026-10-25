@@ -13,6 +13,6 @@ starship init fish | source
 
 # fix psql issue
 fish_add_path /opt/homebrew/opt/postgresql/bin
+fish_add_path /opt/homebrew/opt/rustup/bin ~/.cargo/bin
 
 ~/.local/bin/mise activate fish | source # added by https://mise.run/fish
-

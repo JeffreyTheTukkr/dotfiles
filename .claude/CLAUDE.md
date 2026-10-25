@@ -43,10 +43,18 @@ Cross-project preferences. Each repo's CLAUDE.md overrides anything here.
   (not `export`), `set PATH ...`, `for x in ...; ...; end`. The Bash tool itself
   runs under bash, so scripts you execute can use bash syntax.
 - Package managers: **pnpm** for JS (not npm/yarn; no bun), **Composer** for PHP.
-  Node is managed by **fnm** with use-on-cd — respect the repo's node version.
-  Respect the repo's PHP constraint too (repos target 8.0–8.5).
-- Installed: PHP 8.5, wp-cli, Docker (colima), gh, ripgrep (`rg`),
-  delta, jq, ansible, gettext (`msgfmt`), fd.
+  pnpm self-switches to a repo's `packageManager` version; no corepack.
+- Runtimes: **mise** manages node, pnpm and go (global config in
+  `dotfiles/mise/config.toml`); it reads `.nvmrc` / `.node-version`, so respect
+  the repo's node version. PHP 8.5 comes from Homebrew (older versions via the
+  `shivammathur/php` tap), Composer and wp-cli are phars in `~/.local/bin`,
+  Rust via Homebrew `rustup` (keg-only, on PATH from config.fish).
+  Respect the repo's PHP constraint (repos target 7.1–8.5; the PHP 7.x and
+  Node <18 zbseo repos run in containers, not on the host).
+- Local sites run in **DDEV** (one project per repo, own database each);
+  `.ddev/` is globally gitignored, so never commit it or suggest committing it.
+- Installed: Docker (colima), ddev, mkcert, gh, ripgrep (`rg`), fd, jq, delta,
+  bat, fzf, ansible, gettext (`msgfmt`).
 - JS bundler varies per repo (Vite, esbuild, Bud, Webpack/Encore, Turbopack) —
   use the repo's own package.json scripts (`dev`/`build`/`watch`/`check`); don't
   assume a tool or install one globally.

@@ -19,9 +19,15 @@ fish
 herdr
 tmux
 starship
-mise (php, composer, wp-cli, node, pnpm)
+mise (node, pnpm, go)
+php (homebrew, shivammathur/php tap)
+composer, wp-cli (phars in ~/.local/bin)
+rustup (homebrew)
+colima
 docker
 docker-compose
+ddev
+mkcert
 aerospace
 ```
 
@@ -38,6 +44,7 @@ ln -sfn ~/code/personal/dotfiles/fish/config.fish ~/.config/fish/config.fish
 ln -sfn ~/code/personal/dotfiles/fish/conf.d/abbr.fish ~/.config/fish/conf.d/abbr.fish
 ln -sfn ~/code/personal/dotfiles/fish/fish_plugins ~/.config/fish/fish_plugins
 ln -sfn ~/code/personal/dotfiles/ghostty/config ~/.config/ghostty/config
+ln -sfn ~/code/personal/dotfiles/mise/config.toml ~/.config/mise/config.toml
 ln -sfn ~/code/personal/dotfiles/herdr/config.toml ~/.config/herdr/config.toml
 ln -sfn ~/code/personal/dotfiles/starship/starship.toml ~/.config/starship/starship.toml
 ln -sfn ~/code/personal/dotfiles/aerospace/aerospace.toml ~/.config/aerospace/aerospace.toml
