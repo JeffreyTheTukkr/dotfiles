@@ -8,3 +8,4 @@ mise.lock
 .config/mise/
 .config/mise.toml
 .playwright-mcp/
+.ddev/
