@@ -34,4 +34,5 @@ abbr -a dp docker ps --all
 abbr -a dc docker-compose
 abbr -a dcu docker-compose up
 abbr -a dcd docker-compose up -d
+abbr -a dd ddev
 
