@@ -8,8 +8,10 @@ set -gx COLIMA_HOME ~/.config/colima
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # init fish
-set -x STARSHIP_CONFIG ~/.config/starship/starship.toml
-starship init fish | source
+if status is-interactive
+    set -x STARSHIP_CONFIG ~/.config/starship/starship.toml
+    starship init fish | source
+end
 
 # fix psql issue
 fish_add_path /opt/homebrew/opt/postgresql/bin

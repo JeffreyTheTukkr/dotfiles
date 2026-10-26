@@ -9,13 +9,12 @@ $git_branch\
 $git_commit\
 $git_state\
 $git_status\
-$custom\
 $sudo\
 $status\
 $character"""
 
 
-# hides the code language version
+# hides the package version
 [package]
 disabled = true
 

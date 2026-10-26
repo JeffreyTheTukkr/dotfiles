@@ -20,9 +20,9 @@
 
 [delta]
     navigate = true
-     line-numbers = true
-      hunk-header-decoration-style = none
-      hunk-header-style = file line-number syntax
+    line-numbers = true
+    hunk-header-decoration-style = none
+    hunk-header-style = file line-number syntax
 
 [merge]
     conflictStyle = zdiff3

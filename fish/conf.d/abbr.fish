@@ -7,7 +7,6 @@ abbr -a l ls -la
 # various
 abbr -a vi nvim
 abbr -a npp pnpm
-abbr -a wps wp server
 
 # git
 abbr -a gs git status
