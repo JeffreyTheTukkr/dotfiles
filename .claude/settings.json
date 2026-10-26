@@ -8,12 +8,15 @@
     "allow": [
       "Read",
       "WebSearch",
-      "WebFetch",
       "Bash(git log:*)",
       "Bash(git status:*)",
       "Bash(git diff:*)",
       "Bash(git show:*)",
-      "Bash(git branch:*)",
+      "Bash(git branch)",
+      "Bash(git branch -a:*)",
+      "Bash(git branch -v:*)",
+      "Bash(git branch --list:*)",
+      "Bash(git branch --show-current)",
       "Bash(git blame:*)",
       "Bash(git remote:*)",
       "Bash(rg:*)",
@@ -50,12 +53,12 @@
       "Bash(composer lint:*)",
       "Bash(phpstan:*)",
       "Bash(msgfmt:*)",
-      "mcp__figma__get_screenshot",
-      "mcp__figma__get_design_context",
-      "mcp__figma__get_metadata",
-      "mcp__figma__get_variable_defs",
-      "mcp__figma__get_code_connect_map",
-      "mcp__figma__whoami",
+      "mcp__plugin_figma_figma__get_screenshot",
+      "mcp__plugin_figma_figma__get_design_context",
+      "mcp__plugin_figma_figma__get_metadata",
+      "mcp__plugin_figma_figma__get_variable_defs",
+      "mcp__plugin_figma_figma__get_code_connect_map",
+      "mcp__plugin_figma_figma__whoami",
       "Bash(./vendor/bin/pint:*)",
       "Bash(./vendor/bin/phpstan:*)",
       "Bash(./vendor/bin/phpunit:*)",
@@ -64,20 +67,17 @@
       "Bash(cargo test:*)",
       "Bash(cargo clippy:*)",
       "Bash(cargo build:*)",
-      "Bash(wp:*)",
-      "Bash(sed -n:*)",
-      "Bash(ssh -o BatchMode=yes:*)",
-      "Bash(docker-compose:*)"
-    ],
-    "defaultMode": "auto",
-    "additionalDirectories": [
-      "/tmp"
+      "Bash(sed -n:*)"
     ],
     "ask": [
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(git * commit:*)",
       "Bash(git * push:*)"
+    ],
+    "defaultMode": "auto",
+    "additionalDirectories": [
+      "/tmp"
     ]
   },
   "model": "opus[1m]",
@@ -100,6 +100,18 @@
     "anthropic-skills:pdf": "on",
     "anthropic-skills:skill-creator": "off",
     "anthropic-skills:import-memory": "on"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/code/personal/dotfiles/.claude/hooks/project-docs.sh"
+          }
+        ]
+      }
+    ]
   },
   "worktree": {
     "bgIsolation": "none"
@@ -126,16 +138,5 @@
   "remoteControlAtStartup": true,
   "inputNeededNotifEnabled": true,
   "agentPushNotifEnabled": true,
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "~/code/personal/dotfiles/.claude/hooks/project-docs.sh"
-          }
-        ]
-      }
-    ]
-  }
+  "skipWorkflowUsageWarning": true
 }

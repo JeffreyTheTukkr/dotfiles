@@ -1,7 +1,7 @@
 ---
 description: Compare a built page against its Figma source and report measured mismatches. Use after building or changing a section derived from a Figma design, or when a built section looks off ("still not centered", "text is bigger than the figma", "arrows not aligned").
 argument-hint: "[page URL] [figma link] [selectors or section names]"
-allowed-tools: mcp__figma__get_design_context, mcp__figma__get_metadata, mcp__figma__get_variable_defs, mcp__figma__get_screenshot, mcp__plugin_playwright_playwright__browser_navigate, mcp__plugin_playwright_playwright__browser_resize, mcp__plugin_playwright_playwright__browser_evaluate, mcp__plugin_playwright_playwright__browser_take_screenshot, mcp__plugin_playwright_playwright__browser_snapshot, mcp__plugin_playwright_playwright__browser_console_messages, mcp__plugin_playwright_playwright__browser_close, Read, Grep, Glob, Bash
+allowed-tools: mcp__plugin_figma_figma__get_design_context, mcp__plugin_figma_figma__get_metadata, mcp__plugin_figma_figma__get_variable_defs, mcp__plugin_figma_figma__get_screenshot, mcp__plugin_playwright_playwright__browser_navigate, mcp__plugin_playwright_playwright__browser_resize, mcp__plugin_playwright_playwright__browser_evaluate, mcp__plugin_playwright_playwright__browser_take_screenshot, mcp__plugin_playwright_playwright__browser_snapshot, mcp__plugin_playwright_playwright__browser_console_messages, mcp__plugin_playwright_playwright__browser_close, Read, Grep, Glob
 ---
 
 # Design review

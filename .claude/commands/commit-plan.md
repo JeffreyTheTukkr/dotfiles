@@ -1,7 +1,7 @@
 ---
 description: Inspect the working tree and propose what to commit, grouped into logical commits with a ready-to-paste command block (also copied to the clipboard). Never commits anything itself.
 argument-hint: "[path scope] [hint, e.g. 'one commit' or 'split by feature']"
-allowed-tools: Bash, Read, Grep, Glob
+allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git log:*), Bash(git rev-parse:*), Bash(pbcopy:*), Read, Grep, Glob
 ---
 
 # Commit plan
